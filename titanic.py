@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import random as r
 import matplotlib.pyplot as plt ###importing libraries
 
 data=pd.read_csv("/home/siddhu/Miniproject/titanic/train.csv") ###loading data
@@ -30,7 +31,10 @@ alpha=0.001
 
 #####intializing theta##################
 
-theta=np.empty([6,1])
+theta=np.array([(r.random())])
+for i in range(1,6):
+	theta=np.vstack((theta,np.array([(r.random())])))
+theta=theta.reshape(6,1)
 
 ######geting linear function##########################
 
