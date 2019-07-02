@@ -30,8 +30,7 @@ alpha=0.001
 
 #####intializing theta##################
 
-theta=np.array([((0.1),(0.2),(0.3),(0.4),(0.5),(0.6))])
-theta=theta.reshape(6,1)
+theta=np.empty([6,1])
 
 ######geting linear function##########################
 
